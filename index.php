@@ -1,20 +1,12 @@
-<<<<<<< HEAD
 <?php
 include 'phpclass/conectar.php';
 include 'phpclass/persona.php';
 include 'gestion_personas.php';
 ?>
 <?php include "headerAdmin.php" ?>
-=======
-<?php include "phpclass/conectar.php"; ?>
-<?php include "phpclass/persona.php"; ?>
-<?php include "gestion_personas.php"; ?>
-<?php include "header.php" ?>
->>>>>>> origin/master
 
 			<div id="Intro">
 
-<<<<<<< HEAD
 				<video id="videoIntro" autoplay="autoplay" loop>
 				    <source src="video/back5.mp4" type="video/mp4"></source>
 				</video><!-- 
@@ -30,26 +22,7 @@ include 'gestion_personas.php';
 						<li><a href="#">Login</a></li>
 					</ul>	
 				</nav>
-=======
-			<div id="profile" class="colorHeader">
-					<div id	="image"><img src="img/Colors/lentes.png" alt=""></div>
-					<div id="nombre"><h3> </h3> </div>
-			</div>
-
-			<div id="info" class="colorHeader">
-					<div id="pxs" class="cleardat"></div>
-					<div class="datos"><img src="img/Colors/telefono.png" alt=""><h1><span>Telefono:</span> 9999-9999</h1></div>
-					<div class="cleardat"></div>
-					<div class="datos"><img src="img/Colors/celular.png" alt=""><h1><span>Celular: </span>9999-9999</h1></div>
-					<div class="cleardat"></div>	
-					<div class="datos"><img src="img/Colors/correo.png" alt=""><h1><span>Correo:</span></h1></div>
-					<div class="cleardat"></div>
-					<div class="datos"><img src="img/Colors/gorro.png" alt=""><h1><span>Enfasis:</span> </h1></div>
-					<div class="cleardat"></div>
-					<div class="datos"><img src="img/Colors/nacimiento.png" alt=""><h1><span>Nacimiento:</span></h1></div>
-					<div class="cleardat"></div>
-			</div>
->>>>>>> origin/master
+			
 
 				<div id="logo" style="margin-top:150px;">
 					<h1>PKMS Design</h1>

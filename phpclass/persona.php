@@ -28,11 +28,10 @@ class Persona extends Conectar{
 
     public function getPersona($Id) {
         try {
-<<<<<<< HEAD
+
             $sql = 'SELECT p.*, `e`.`descripcion` FROM  `persona` p INNER JOIN `enfasis` e ON `p`.`id_enfasis` = `e`.`id_enfasis` WHERE `p`.`id_persona`='.$Id;
-=======
+
             $sql = "SELECT p.*, `e`.`descripcion` FROM  `persona` p INNER JOIN `enfasis` e ON `p`.`id_enfasis` = `e`.`id_enfasis` WHERE id_persona = ".$Id;
->>>>>>> origin/master
             $query = mysqli_query(self::conectar(), $sql);
 
             while ($queryData = mysqli_fetch_assoc($query)) {
