@@ -7,7 +7,6 @@
 #wrapper{
 	width: 100%;
 	background-color: blue;
-	height: 4000px;
 }
 
 #intro{
@@ -84,3 +83,78 @@
 	text-align: center;
 }
 
+#proyectos{
+	height: 800px;
+	background-color: green;
+}
+
+#proyectos h1{
+	border-bottom-style: solid;
+	text-align: center;
+}
+
+.proyectoImg{
+	background-color: black;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+}
+.proyecto{
+	width: 400px;
+	height: 400px;
+	padding-top: 200px;
+	float: left;
+	text-align: center;
+	padding-left: 20px;
+}
+
+#galeria{
+	height: 800px;
+	background-color: gray;
+}
+
+.thumb{
+	background-color: black;
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin: 20px;
+}
+
+#galeria h1{
+	border-bottom-style: solid;
+	text-align: center;
+}
+
+#pasatiempos{
+	height: 250px;
+	background-color: white;
+}
+
+.pasatiempoImg{
+	background-color: black;
+	width: 100px;
+	height: 100px;
+	padding: 10px;
+}
+
+.pasatiempo{
+	padding: 20px;
+	float: left;
+	margin: 0 auto;
+}
+
+#pasatiempos h1{
+	border-bottom-style: solid;
+	text-align: center;
+}
+
+#contenedor{
+	width: 700px;
+	margin: 0 auto;
+}
+
+footer{
+	background-color: gray;
+	width: 100px;
+}
