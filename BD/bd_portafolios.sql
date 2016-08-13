@@ -2,7 +2,7 @@ USE proyecto;
 
 CREATE TABLE usuario
 (usuario NVARCHAR(30) NOT NULL PRIMARY KEY,
-contraseña NVARCHAR(30) NOT NULL);
+clave NVARCHAR(30) NOT NULL);
 
 CREATE TABLE enfasis
 (id_enfasis INT auto_increment PRIMARY KEY,

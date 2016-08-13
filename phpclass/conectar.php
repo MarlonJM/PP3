@@ -39,7 +39,7 @@
 					$this->getDatabase()
 				);
 
-				if (mysqli_connect_errno()) { 
+				if (mysqli_connect_error()) {
 					throw new Exception("Falló la conexión: %s\n", mysqli_connect_error());
     			}
 

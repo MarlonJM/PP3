@@ -19,7 +19,7 @@ include 'gestion_personas.php';
 						<li><a href="#who">¿Quienes Somos?</a></li>
 						<li><a href="#team">Nuestro Equipo</a></li>
 						<li><a href="#formulario">Forma Parte</a></li>
-						<li><a href="#">Login</a></li>
+						<li><a href="login.php">Login</a></li>
 					</ul>	
 				</nav>
 			
