@@ -1,5 +1,7 @@
+CREATE DATABASE proyecto
+  DEFAULT CHARACTER SET utf8
+  DEFAULT COLLATE utf8_general_ci;
 USE proyecto;
-
 CREATE TABLE usuario
 (usuario NVARCHAR(30) NOT NULL PRIMARY KEY,
 clave NVARCHAR(30) NOT NULL);

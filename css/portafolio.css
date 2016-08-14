@@ -6,14 +6,27 @@
 
 #wrapper{
 	width: 100%;
-	background-color: blue;
 }
 
 #intro{
 	height: 700px;
-	background-color: yellow;
 	position: relative;
 }
+
+#videoIntro{
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: fixed;   
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);  
+  z-index: -100;
+  background-size: cover;
+  opacity: ;
+}
+
 
 #menu{
 	position: absolute;
@@ -23,30 +36,96 @@
 	padding-right: 20px;
 	width: 70px;
 	height: 70px;
-	background-color: red;
+}
+
+/* Dropdown Button */
+.dropbtn {
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 101px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .icon-menu {
+   background-color: black;
+
+  	-webkit-transition: background-color 500ms;
+    -moz-transition: background-color 500ms;
+    -o-transition: background-color 500ms;
+    -ms-transition: background-color 500ms;
+    transition: background-color 500ms;
+}
+
+
+.icon-menu{
+	font-size: 60px;
+	color: white;
+	line-height: 20%;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
 }
 
 #perfil{
-	padding-top: 40px;
+	padding-top: 150px;
 	width: 400px;
 	margin: 0 auto;
 	text-align: center;
+	color: white;
+	font-size: 20px;
 }
 
 #profileImg{
 	width: 300px;
 	height: 300px;
 	border-radius: 200px;
-	background-color: black;
+	background-image: url("../img/foto.jpg");
+	background-position: center;
+	background-size: 100%;
 	margin: 0 auto;
+	border-style: solid;
+	border-color: white;
 }
 
 #acerca{
 	height: 700px;
-	background-color: gray;
+	background-color: #DCDCE0;
 }
 
 #acerca h1{
+	color: rgb(71, 95, 119);
 	border-style: solid;
 	border-color: transparent;
 	border-bottom-color: black;
@@ -58,10 +137,17 @@
 	height: 640px;
 	float: left;
 	margin: 20px;
-	padding-right: 20px;
+	padding-right: 78px;
+	padding-left: 40px;
 	border-style: solid;
 	border-color: transparent;
 	border-right-color: black;
+}
+
+#descripcion p{
+	padding-top:20px;
+	text-align:center;
+	font-size: 20px;
 }
 
 #contacto{
@@ -72,8 +158,8 @@
 	padding-right: 20px;
 }
 
-#datos{
-
+#formacion{
+	padding-top: 30px;
 }
 
 #datos h1{
@@ -128,7 +214,7 @@
 
 #pasatiempos{
 	height: 250px;
-	background-color: white;
+	background-color: rgb(71, 95, 119);
 }
 
 .pasatiempoImg{
@@ -157,4 +243,17 @@
 footer{
 	background-color: gray;
 	width: 100px;
+}
+
+.acercaIcon{
+	width: 100%;
+}
+.acercaIcon *{
+	float: left;
+	padding: 10px;
+	font-size: 30px;
+}
+
+.acercaIcon i{
+	padding-top: 18px;
 }

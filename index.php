@@ -61,20 +61,6 @@ include 'gestion_personas.php';
 			</div>
 
 			<div id="team">
-			<?php foreach ($resultado as $linea) { ?>
-
-				<div class="profile" style="">
-					<div class="profilePic" style="background-image: url('img/<?php echo $linea['profileimg']?>');">
-
-					</div>
-
-					<div class="profileDesc">
-						<h1><?php echo $linea['nombre'] ?></h1>
-						<a href="portafolio.php?id_persona=<?php echo $linea['id_persona'] ?>">Ver Portafolio</a>
-					</div>
-				</div>
-
-			<?php } ?> 
 				
 			</div>
 
