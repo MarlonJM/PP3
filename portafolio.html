@@ -20,9 +20,9 @@
 			<div class="dropdown">
 				  <i class="icon-menu"></i>
 				  <div class="dropdown-content">
-				    <a href="#">Acerca</a>
-				    <a href="#">Proyectos</a>
-				    <a href="#">Galería</a>
+				    <a href="#acerca">Acerca</a>
+				    <a href="#proyectos">Proyectos</a>
+				    <a href="#galeria">Galería</a>
 				  </div>
 			</div>
 
@@ -79,30 +79,35 @@
 
 			<div class="proyecto">
 				<div class="proyectoImg"></div>
-				<a>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				<h2>Titulo</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</a>
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
 			</div>
 
 			<div class="proyecto">
 				<div class="proyectoImg"></div>
-				<a>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				<h2>Titulo</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</a>
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
 			</div>
 
 			<div class="proyecto">
 				<div class="proyectoImg"></div>
-				<a>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				<h2>Titulo</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</a>
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
 			</div>
 			
 
 		</div>
+
+		<div style="clear:both;"></div>
 
 
 		<div id="galeria">
@@ -129,22 +134,22 @@
 			<div id=contenedor>
 				<div class="pasatiempo">
 					<div class="pasatiempoImg"></div>
-					<h1>Titulo</h1>
+					<h2>Titulo</h2>
 				</div>
 
 				<div class="pasatiempo">
 					<div class="pasatiempoImg"></div>
-					<h1>Titulo</h1>
+					<h2>Titulo</h2>
 				</div>
 
 				<div class="pasatiempo">
 					<div class="pasatiempoImg"></div>
-					<h1>Titulo</h1>
+					<h2>Titulo</h2>
 				</div>
 
 				<div class="pasatiempo">
 					<div class="pasatiempoImg"></div>
-					<h1>Titulo</h1>
+					<h2>Titulo</h2>
 				</div>
 			</div>
 			
@@ -156,5 +161,23 @@
 		</footer>
 	</div>
 </body>
+
+<script>
+    /* Smooth scrolling para anclas*/  
+		$(function() {
+		  $('a[href*="#"]:not([href="#"])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html, body').animate({
+		          scrollTop: target.offset().top
+		        }, 1000);
+		        return false;
+		      }
+		    }
+		  });
+		}); 
+	</script>
 
 </html>

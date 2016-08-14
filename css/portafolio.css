@@ -55,7 +55,7 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    right: 14px;
+    right: 12px;
     background-color: transparent;
     min-width: 101px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -140,6 +140,9 @@
 	border-color: transparent;
 	border-bottom-color: black;
 	text-align: center;
+	padding-top: 20px;
+    padding-bottom: 20px;
+
 }
 
 #descripcion{
@@ -147,7 +150,7 @@
 	height: 640px;
 	float: left;
 	margin: 20px;
-	padding-right: 78px;
+	padding-right: 65px;
 	padding-left: 40px;
 	border-style: solid;
 	border-color: transparent;
@@ -165,7 +168,7 @@
 	height: 640px;
 	float: right;
 	margin: 20px;
-	padding-right: 20px;
+	padding-right: 30px;
 }
 
 #formacion{
@@ -181,37 +184,70 @@
 
 #proyectos{
 	height: 800px;
-	background-color: green;
+	background-color: #0C1829;
 }
 
 #proyectos h1{
 	border-bottom-style: solid;
 	text-align: center;
+	color: #FF8A00;
+	padding-top: 20px;
+    padding-bottom: 20px;
+
 }
 
 .proyectoImg{
-	background-color: black;
+	background-image: url("../img/project.png");
+	background-position: center;
+	background-size: 100%;
 	width: 200px;
 	height: 200px;
 	margin: 0 auto;
+
+	  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
 }
+
+.proyectoImg:hover{
+	width: 300px;
+  	height: 300px;
+}
+
 .proyecto{
 	width: 400px;
 	height: 400px;
-	padding-top: 200px;
+	padding-top: 80px;
 	float: left;
 	text-align: center;
 	padding-left: 20px;
+
+}
+
+.proyecto h2{
+	padding-top: 20px;
+	font-size: 35px;
+	color: #FF8A00;
+}
+
+.proyecto p{
+	color: white;
+	font-size: 20px;
 }
 
 #galeria{
 	height: 800px;
-	background-color: gray;
+	background-color: #FCF8EF;
 }
 
 .thumb{
-	background-color: black;
-	width: 200px;
+	background-image: url("../img/galery.png");
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 229px;
 	height: 200px;
 	float: left;
 	margin: 20px;
@@ -220,11 +256,15 @@
 #galeria h1{
 	border-bottom-style: solid;
 	text-align: center;
+	color: rgb(71, 95, 119);
+	padding-top: 20px;
+    padding-bottom: 20px;
+
 }
 
 #pasatiempos{
-	height: 250px;
-	background-color: rgb(71, 95, 119);
+	height: 300px;
+	background-color: #0C1829;
 }
 
 .pasatiempoImg{
@@ -243,6 +283,15 @@
 #pasatiempos h1{
 	border-bottom-style: solid;
 	text-align: center;
+	padding-top: 20px;
+    padding-bottom: 20px;
+    color: #FCF8EF;
+}
+
+#pasatiempos h2{
+	text-align: center;
+	padding-top: 10px;
+	color: #FCF8EF;
 }
 
 #contenedor{
@@ -251,8 +300,8 @@
 }
 
 footer{
-	background-color: gray;
-	width: 100px;
+	background-color: rgb(216,216,216);
+	width: 100%;
 }
 
 .acercaIcon{
