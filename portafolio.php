@@ -1,126 +1,147 @@
 <?php include "phpclass/conectar.php"; ?>
 <?php include "phpclass/persona.php"; ?>
-<?php include "gestion_persona.php"; ?>
 <?php include "header.php" ?>
 
-<section id="acerca">
+		<div id="intro">
 
-			<div id="profile" class="colorHeader">
-					<div id	="image"><img src="img/Colors/lentes.png" alt=""></div>
-					<div id="nombre"><h3> <?php echo $resul["nombre"]." " .$resul["apellido1"]?> </h3> </div>
+			<video id="videoIntro" autoplay="autoplay" loop>
+				<source src="video/back3.mp4" type="video/mp4"></source>
+			</video>
+
+			<div class="dropdown">
+				  <i class="icon-menu"></i>
+				  <div class="dropdown-content">
+				    <a href="#acerca">Acerca</a>
+				    <a href="#proyectos">Proyectos</a>
+				    <a href="#galeria">Galería</a>
+				  </div>
 			</div>
 
-			<div id="info" class="colorHeader">
-					<div id="pxs" class="cleardat"></div>
-					<div class="datos"><img src="img/Colors/telefono.png" alt=""><h1><span>Telefono:</span> 9999-9999</h1></div>
-					<div class="cleardat"></div>
-					<div class="datos"><img src="img/Colors/celular.png" alt=""><h1><span>Celular: </span>9999-9999</h1></div>
-					<div class="cleardat"></div>	
-					<div class="datos"><img src="img/Colors/correo.png" alt=""><h1><span>Correo:</span> <?php echo $resul["correo"]?></h1></div>
-					<div class="cleardat"></div>
-					<div class="datos"><img src="img/Colors/gorro.png" alt=""><h1><span>Enfasis:</span> <?php echo $resul["descripcion"]?></h1></div>
-					<div class="cleardat"></div>
-					<div class="datos"><img src="img/Colors/nacimiento.png" alt=""><h1><span>Nacimiento:</span> <?php echo $resul["fechaNacimiento"]?></h1></div>
-					<div class="cleardat"></div>
-			</div>
-
-			<div style= "margin-top:20px; margin-bottom:100px;" id="colegio" class="colorHeader">	
-					<img src="img/Colors/diploma.png" alt="Colegio"><h1>Colegio</h1>
-					<div class="clear"></div>
-					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus nihil sint earum quibusdam natus fuga ullam provident enim at officiis, assumenda numquam possimus rerum illum molestiae dicta quam reiciendis?</p>
+			<div id="perfil">
+				
 			</div>
 			
-			<div style= "margin-top:20px;margin-bottom:100px;" id="uni" class="colorHeader">
-				<img src="img/Colors/uni.png" alt="Universidad"><h1>Universidad</h1>
-				<div class="clear"></div>
-				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, illo mollitia a commodi soluta suscipit, consequuntur deleniti tempore. Ad laboriosam illo placeat rem! Nostrum enim nihil dignissimos blanditiis, soluta culpa?</p>
-			</div>
-
-		</section>
-
-		<div class="clear"></div>
-
-		<!-- <div id="software" class="colorHeader">
-			<h1>Software</h1>
-				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus tenetur impedit modi laboriosam fugiat voluptatum facilis, eius consequatur cupiditate vel quasi dolores, reprehenderit numquam dolor asperiores sint quisquam suscipit eum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error laboriosam in fugiat ullam, eum incidunt libero blanditiis delectus, veritatis fuga corrupti dignissimos. Quo ut recusandae esse incidunt nulla, commodi alias.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et fuga obcaecati labore qui itaque! Perspiciatis, error deleniti, neque laudantium, corrupti autem ut repudiandae aspernatur, quod officiis cupiditate alias beatae facere!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque quas earum quibusdam aliquam in neque alias eaque accusantium nostrum, dolor aliquid repudiandae fugiat numquam quasi ratione enim blanditiis autem distinctio.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere repellendus, a aut aperiam dolorum odit asperiores atque minima optio beatae velit voluptatum praesentium. Itaque voluptas minus sed, aspernatur impedit vel. ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, sunt ad molestiae ipsam alias aliquid fugiat, minima? Exercitationem, ratione rem, voluptate veritatis velit, molestiae neque suscipit assumenda ipsum vel corrupti.</p>
-			<div class="clear"></div>
-		</div> -->
-
-		<div id="proyectos" class="colorHeader">
-				<!-- <img src="images/Colors/proyectos.png" alt=""> -->
-				<h1>Proyectos</h1>
-				<img src="" alt="">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus aut perspiciatis voluptates iusto fugiat accusantium. Quaerat, suscipit minima sed odit temporibus. Reiciendis, aliquam. Eligendi voluptatum, accusantium nisi eius, recusandae neque.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa at et eveniet doloremque nesciunt, nemo a eos placeat commodi in tempore assumenda, impedit nostrum rerum optio facere ut aspernatur. Quas.</p>
-				<div class="clear"></div>
 		</div>
 
-		
+		<div id="acerca">
 
-		<div id="gallery" class="colorGallery">
-					<div class="preview">
-						<img src="" alt="">
-					</div>
-					<div class="preview">
-						<img src="" alt="">
-					</div>
-					<div class="preview">
-						<img src="" alt="">
-					</div>
-					<div class="preview">
-						<img src="" alt="">
-					</div>
-					<div class="preview">
-						<img src="" alt="">
-					</div>
-					<div class="preview">
-						<img src="" alt="">
-					</div>
-					<div class="preview">
-						<img src="" alt="">
-					</div>
-					<div class="preview">
-						<img src="" alt="">
-					</div>
-					<div class="preview">
-						<img src="" alt="">
-					</div>
-					<div class="preview">
-						<img src="" alt="">
-					</div>
-					<div class="preview">
-						<img src="" alt="">
-					</div>
-					<div class="preview">
-						<img src="" alt="">
-					</div>
-					<div class="preview">
-						<img src="" alt="">
-					</div>
-					<div class="preview">
-						<img src="" alt="">
-					</div>
-					<div class="preview">
-						<img src="" alt="">
-					</div>
-					<div class="preview">
-						<img src="" alt="">
-					</div>
-					<div class="preview">
-						<img src="" alt="">
-					</div>
-					<div class="preview">
-						<img src="" alt="">
-					</div>
-					<div class="preview">
-						<img src="" alt="">
-					</div>
-					<div class="preview">
-						<img src="" alt="">
-					</div>
+			<div id="descripcion">
+				<h1>Acerca de Mi</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidata.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+
+			<div id="contacto">
+				<div id="datos">
+					<h1>Contacto</h1>
+						
+					<div class="acercaIcon" style="padding-top:20px;"><i class="icon-phone"></i><h2>2256-1564</h2></div>
+					<div style="clear:both;"></div>
+					<div class="acercaIcon"><i class="icon-mobile"></i><h2>6067-0585</h2></div>
+					<div style="clear:both;"></div>
+					<div class="acercaIcon"><i class="icon-markunread"></i><h2>marlonjarquin@hotmail.com</h2></div>
+					<div style="clear:both;"></div>
 				</div>
 
+				<div id="formacion">
+					<h1>Formación Académica</h1>
+					<div class="acercaIcon" style="padding-top:20px;"><i class="icon-mode_edit"></i><h2>Liceo Mauro Fenández Acuña</h2></div>
+					<div style="clear:both;"></div>
+					<div class="acercaIcon"><i class="icon-graduation-cap"></i><h2>U.I.A</h2></div>
+					<div style="clear:both;"></div>
+				</div>
+				
+			</div>
+
+		</div>
+
+		<div id="proyectos">
+
+			<h1>Proyectos</h1>
+
+			<div class="proyecto">
+				<div class="proyectoImg"></div>
+				<h2>Titulo</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+			</div>
+
+			<div class="proyecto">
+				<div class="proyectoImg"></div>
+				<h2>Titulo</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+			</div>
+
+			<div class="proyecto">
+				<div class="proyectoImg"></div>
+				<h2>Titulo</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+			</div>
+			
+
+		</div>
+
+		<div style="clear:both;"></div>
+
+
+		<div id="galeria">
+			<h1>Galería</h1>
+			<div class="thumb"></div>
+			<div class="thumb"></div>
+			<div class="thumb"></div>
+			<div class="thumb"></div>
+			<div class="thumb"></div>
+			<div class="thumb"></div>
+			<div class="thumb"></div>
+			<div class="thumb"></div>
+			<div class="thumb"></div>
+			<div class="thumb"></div>
+			<div class="thumb"></div>
+			<div class="thumb"></div>
+			<div class="thumb"></div>
+			<div class="thumb"></div>
+			<div class="thumb"></div>
+		</div>
+
 		<div id="pasatiempos">
-			<img class="colorHeader" src="" alt="Pasatiempos">
+			<h1>Pasatiempos</h1>
+			<div id=contenedor>
+				<div class="pasatiempo">
+					<div class="pasatiempoImg"></div>
+					<h2>Titulo</h2>
+				</div>
+
+				<div class="pasatiempo">
+					<div class="pasatiempoImg"></div>
+					<h2>Titulo</h2>
+				</div>
+
+				<div class="pasatiempo">
+					<div class="pasatiempoImg"></div>
+					<h2>Titulo</h2>
+				</div>
+
+				<div class="pasatiempo">
+					<div class="pasatiempoImg"></div>
+					<h2>Titulo</h2>
+				</div>
+			</div>
 		</div>
 
 <?php include "footer.php" ?>

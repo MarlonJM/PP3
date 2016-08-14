@@ -18,6 +18,8 @@ apellido2 VARCHAR(20),
 fechaNacimiento DATE,
 correo NVARCHAR(30),
 usuario NVARCHAR(30),
+profileImg NVARCHAR(100),
+id_enfasis INT,
 FOREIGN KEY (usuario) REFERENCES usuario(usuario),
 id_enfasis INT,
 FOREIGN KEY (id_enfasis) REFERENCES enfasis(id_enfasis));

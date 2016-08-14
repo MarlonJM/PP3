@@ -1,9 +1,7 @@
 </div>
-
 		<footer>
-				<p>Copyright&copy;PKMS</p>
+			<h1>PKMS</h1>
 		</footer>
-
 </body>
 
 <script>

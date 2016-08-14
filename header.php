@@ -2,29 +2,14 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<script src="http://code.jquery.com/jquery-3.0.0.min.js" type="application/javascript"></script>
-	<script src="js/consultarJsonPersonas.js" type="application/javascript"></script>
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="img/fonts.css">
-	<title>Porfatolio</title>
+	<link rel="stylesheet" type="text/css" href="css/portafolio.css">
+	<link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="img\menu\style.css">
+	<link rel="stylesheet" type="text/css" href="img\acerca\style.css">
+	<script src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
+	<script src="js/consultarJsonPersonaId.js" type="application/javascript"></script>
+	<title>Portafolio</title>
 </head>
 
 <body>
-
-<!--Navbar-->
-
-	<div id="nav">
-		<div id="menu">
-			<a href="#acerca" class="smooth">Acerca</a>  
-	    	<a href="#proyectos" class="smooth">Proyectos</a>  
-	    	<a href="#pasatiempos" class="smooth">Pasatiempos</a>
-		</div>
-	</div>
-<!--Fin Navbar-->
-
-	<section id="welcome">
-		<h1>PKMS Design</h1>
-	</section>
-
 	<div id="wrapper">

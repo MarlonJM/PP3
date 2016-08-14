@@ -16,7 +16,7 @@ var app = {
                                 '</div>'+
                                 '<div class="profileDesc">'+
                                     '<h1>' + resultado[i].nombre + '</h1>'+
-                                    '<a href="index.php"> Ver Portafolio</a>'+
+                                    '<a href="portafolio.php?id='+ resultado[i].id_persona +'"> Ver Portafolio</a>'+
                                 '</div>'+
                             '</div>');    
                     }
