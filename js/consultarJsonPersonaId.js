@@ -17,9 +17,6 @@ var app = {
                     +'<h1 style="padding-top:20px;">'+resultado['nombre']+' '+resultado['apellido1']
                     +'</h1>'
                 );
-            },
-            complete: function() {
-                alert("completado");
             }
         });
     }

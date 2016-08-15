@@ -22,9 +22,6 @@ var app = {
                     }
                     
                 }
-            },
-            complete: function() {
-                alert("completado");
             }
         });
     }
