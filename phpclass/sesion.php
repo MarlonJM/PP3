@@ -33,7 +33,8 @@
                 $_SESSION['clave'] = $result['clave'];
 
                 //agregar url de la pagina editar portafolio
-                header("location: ver-session-prueba.php?right");
+                //header("location: ver-session-prueba.php?right");
+                header("location: portafolio.php?id=" .$_SESSION['id_persona']);
 
             }else{
                 header("Location: login.php?error=datos-incorrectos");
