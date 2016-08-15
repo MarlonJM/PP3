@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/portafolio.css">
+	<link rel="stylesheet" type="text/css" href="css/edit.css">
 	<link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="img\menu\style.css">
 	<link rel="stylesheet" type="text/css" href="img\acerca\style.css">
@@ -12,4 +13,5 @@
 </head>
 
 <body>
+	
 	<div id="wrapper">

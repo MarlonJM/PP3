@@ -1,0 +1,108 @@
+/*Version Editable*/
+
+#side{
+	position: absolute;
+	height: 100%;
+	width: 100px;
+	background-color: rgba(13,13,13,0.9);
+	z-index: 1;
+}
+
+#side:hover{
+	width: 100%;
+	opacity: 0.5;
+	-webkit-transition: width 0.4s ease-in-out;
+    -moz-transition: width 0.4s ease-in-out;
+    -o-transition: width 0.4s ease-in-out;
+    -ms-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+#side *{
+	display: none;
+}
+
+#side:hover *{
+	display: block;
+}
+
+#side:hover .contenido{
+	visibility: hidden;
+}
+
+#introEdit{
+	height: 700px;
+}
+
+#perfilEdit{
+	padding-top: 150px;
+	width: 400px;
+	margin: 0 auto;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+}
+
+#profileImgEdit{
+	width: 300px;
+	height: 300px;
+	border-radius: 200px;
+	background-position: center;
+	background-size: 100%;
+	margin: 0 auto;
+	border-style: solid;
+	border-color: white;
+}
+
+#acercaEdit{
+	height: 700px;
+}
+
+#acercaEdit h1{
+	color:#123A73;
+	/*rgb(71, 95, 119);*/
+	border-style: solid;
+	border-color: transparent;
+	border-bottom-color: #4ECDE7;
+	text-align: center;
+	padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+#descripcionEdit{
+	width: 550px;
+	height: 640px;
+	float: left;
+	margin: 20px;
+	padding-right: 65px;
+	padding-left: 40px;
+	border-style: solid;
+	border-color: transparent;
+	border-right-color: #4ECDE7;
+}
+
+#descripcionEdit p{
+	padding-top:20px;
+	text-align:center;
+	font-size: 20px;
+}
+
+#contactoEdit{
+	width: 550px;
+	height: 640px;
+	float: right;
+	margin: 20px;
+	padding-right: 30px;
+}
+
+#formacionEdit{
+	padding-top: 30px;
+}
+
+#datosEdit h1{
+	border-style: solid;
+	border-color: transparent;
+	border-bottom-color: #4ECDE7;
+	text-align: center;
+}
