@@ -1,97 +1,19 @@
 <?php include "phpclass/conectar.php"; ?>
 <?php include "phpclass/persona.php"; ?>
 <?php include "header.php" ?>
-		
-		<div id="side">
-		<form>
-			<div id="introEdit">
-				<div id="perfilEdit">
-					<div id="profileImgEdit"></div>
-					<h1 style="padding-top:20px;">Marlon Jarquín</h1>
-				</div>
-			</div>
 
-			<div id="acercaEdit">
-				<div id="descripcionEdit">
-					<h1>Acerca de Mi</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidata.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</div>
-
-				<div id="contactoEdit">
-					<div id="datosEdit">
-						<h1>Contacto</h1>
-							
-						<div class="acercaIconEdit" style="padding-top:20px;"><i class="icon-phone"></i><h2>2256-1564</h2></div>
-						<div style="clear:both;"></div>
-						<div class="acercaIconEdit"><i class="icon-mobile"></i><h2>6067-0585</h2></div>
-						<div style="clear:both;"></div>
-						<div class="acercaIconEdit"><i class="icon-markunread"></i><h2>marlonjarquin@hotmail.com</h2></div>
-						<div style="clear:both;"></div>
-					</div>
-
-					<div id="formacionEdit">
-						<h1>Formación Académica</h1>
-						<div class="acercaIconEdit" style="padding-top:20px;"><i class="icon-mode_edit"></i><h2>Liceo Mauro Fenández Acuña</h2></div>
-						<div style="clear:both;"></div>
-						<div class="acercaIconEdit"><i class="icon-graduation-cap"></i><h2>U.I.A</h2></div>
-						<div style="clear:both;"></div>
-					</div>
-					
-				</div>
-			</div>
-
-				<div id="proyectosEdit">
-
-					<h1>Proyectos</h1>
-
-					<div class="proyectoEdit">
-						<div class="proyectoImgEdit"></div>
-						<h2>Titulo</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-					</div>
-
-					<div class="proyectoEdit">
-						<div class="proyectoImgEdit"></div>
-						<h2>Titulo</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-					</div>
-
-					<div class="proyectoEdit">
-						<div class="proyectoImgEdit"></div>
-						<h2>Titulo</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-					</div>
-					
-
-				</div>
-
-				<div style="clear:both;"></div>
-
-			
-
-
-		</form>
-		</div>
 
 		<div id="intro">
+			<div id="sideEdit" style="width:100%;height:100%;background-color:black;z-index:1;position:absolute;">
+
+				<form>
+					<div id="perfilEdit">
+						<div id="profileImgEdit"></div>
+						<input type="text" name="" style="margin-top:20px;">
+						<input id="boton"  type="button" name="" value="Aceptar">
+					</div>
+				</form>
+			</div>
 
 			<video id="videoIntro" autoplay="autoplay" loop>
 				<source src="video/back3.mp4" type="video/mp4"></source>
@@ -113,6 +35,41 @@
 		</div>
 
 		<div id="acerca">
+
+		<!-- Editar -->
+			<div id="sideEdit" style="width:100%;height:100%;background-color:blue;z-index:1;position:absolute;">
+
+			<div id="descripcionEdit">
+					<h1>Acerca de Mi</h1>
+					<textarea cols="89" rows="20s" style="margin-top:20px;resize: none;"></textarea>
+				</div>
+
+				<div id="contactoEdit">
+				<form>
+					<div id="datosEdit">
+						<h1>Contacto</h1>
+							
+						<div class="acercaIconEdit" style="margin-top:20px;"><i class="icon-phone"></i><input type="text" name=""></div>
+						<div style="clear:both;"></div>
+						<div class="acercaIconEdit"><i class="icon-mobile"></i><input type="text" name=""></div>
+						<div style="clear:both;"></div>
+						<div class="acercaIconEdit"><i class="icon-markunread"></i><input type="text" name=""></div>
+						<div style="clear:both;"></div>
+					</div>
+
+					<div id="formacionEdit">
+						<h1>Formación Académica</h1>
+						<div class="acercaIconEdit" style="padding-top:20px;"><i class="icon-mode_edit"></i><input type="text" name=""></div>
+						<div style="clear:both;"></div>
+						<div class="acercaIconEdit"><i class="icon-graduation-cap"></i><input type="text" name=""></div>
+						<div style="clear:both;"></div>
+					</div>
+				</div>
+				<input type="button" name="" value="aceptar">
+				</form>
+			</div>
+
+			<!-- Fin Editar -->
 
 			<div id="descripcion">
 				<h1>Acerca de Mi</h1>
@@ -153,7 +110,7 @@
 		</div>
 
 		<div id="proyectos">
-
+			
 			<h1>Proyectos</h1>
 
 			<div class="proyecto">
