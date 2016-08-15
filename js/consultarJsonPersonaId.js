@@ -14,7 +14,7 @@ var app = {
                 $('#perfil').append(
                     '<div id="profileImg" style="background-image: url(img/'+resultado['profileImg']+')">'
                     +'</div>'
-                    +'<h1 style="padding-top:20px;">'+resultado['nombre']+' '+resultado['primerApellido']
+                    +'<h1 style="padding-top:20px;">'+resultado['nombre']+' '+resultado['apellido1']
                     +'</h1>'
                 );
             },
