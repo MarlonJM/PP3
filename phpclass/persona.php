@@ -46,8 +46,8 @@ class Persona extends Conectar{
     
     public function getTelefono($Id) {
         try {
-            $sql = "SELECT `t`.`telefono`, `tp`.`descripcion` FROM `telefono` t INNER JOIN `tipoTelefono` tp
-            ON t.id_tipoTelefono = tp.id_tipoTelefono WHERE t.id_persona = 1".$Id;
+            $sql = "SELECT t.telefono, tp.descripcion FROM telefono t INNER JOIN tipoTelefono tp
+            ON t.id_tipoTelefono = tp.id_tipoTelefono WHERE id_persona = ".$Id;
             $query = mysqli_query(self::conectar(), $sql);
 
             while ($queryData = mysqli_fetch_assoc($query)) {

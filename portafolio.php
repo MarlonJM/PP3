@@ -43,12 +43,7 @@
 				<div id="datos">
 					<h1>Contacto</h1>
 						
-					<div class="acercaIcon" style="padding-top:20px;"><i class="icon-phone"></i><h2>2256-1564</h2></div>
-					<div style="clear:both;"></div>
-					<div class="acercaIcon"><i class="icon-mobile"></i><h2>6067-0585</h2></div>
-					<div style="clear:both;"></div>
-					<div class="acercaIcon"><i class="icon-markunread"></i><h2>marlonjarquin@hotmail.com</h2></div>
-					<div style="clear:both;"></div>
+					
 				</div>
 
 				<div id="formacion">
