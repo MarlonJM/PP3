@@ -4,13 +4,12 @@
 	position: absolute;
 	height: 100%;
 	width: 100px;
-	background-color: rgba(13,13,13,0.9);
+	background-color: rgba(13,13,13,0.5);
 	z-index: 1;
 }
 
 #side:hover{
 	width: 100%;
-	opacity: 0.5;
 	-webkit-transition: width 0.4s ease-in-out;
     -moz-transition: width 0.4s ease-in-out;
     -o-transition: width 0.4s ease-in-out;
@@ -24,10 +23,6 @@
 
 #side:hover *{
 	display: block;
-}
-
-#side:hover .contenido{
-	visibility: hidden;
 }
 
 #introEdit{
@@ -105,4 +100,72 @@
 	border-color: transparent;
 	border-bottom-color: #4ECDE7;
 	text-align: center;
+}
+
+.acercaIconEdit{
+	width: 100%;
+}
+.acercaIconEdit *{
+	float: left;
+	padding: 10px;
+	font-size: 30px;
+}
+
+.acercaIconEdit i{
+	padding-top: 18px;
+}
+
+#proyectosEdit{
+	height: 800px;
+	background-color: #0C1829;
+}
+
+#proyectosEdit h1{
+	border-bottom-style: solid;
+	text-align: center;
+	color: #FF8A00;
+	padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.proyectoImgEdit{
+	background-image: url("../img/project.png");
+	background-position: center;
+	background-size: 100%;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+
+	  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+.proyectoImgEdit:hover{
+	width: 300px;
+  	height: 300px;
+}
+
+.proyectoEdit{
+	width: 400px;
+	height: 400px;
+	padding-top: 80px;
+	float: left;
+	text-align: center;
+	padding-left: 20px;
+
+}
+
+.proyectoEdit h2{
+	padding-top: 20px;
+	font-size: 35px;
+	color: #FF8A00;
+}
+
+.proyectoEdit p{
+	color: white;
+	font-size: 20px;
 }
