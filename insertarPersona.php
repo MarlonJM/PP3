@@ -30,7 +30,7 @@ if($persona->InsertarPersona($nombre, $descripcion, $correo)) {
 }
 
 
-if($usuario->InsertarUsuario($clave, $usuario, 5)) {
+if($usuario->InsertarUsuario($clave, $usuario, 6)) {
 
 } else {
 
