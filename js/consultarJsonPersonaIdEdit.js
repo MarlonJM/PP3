@@ -45,8 +45,8 @@ var app = {
                             $('#datosPortafolio').append(
                                 '<div class="acercaIcon" style="padding-top:20px;"><i class="icon-phone"></i><input type="text" value="'+resultado[i].telefono+'"name="telefono">'
                                 +'/div>'
-                                +'<div style="clear:both;"></div>'
-                                '<div class="acercaIcon"><i class="icon-mobile"></i><input type="text" value="'+resultado[i].telefono+'" name="telefono">'
+                                +'<div style="clear:both;"></div>'+
+                                '<div class="acercaIcon"><i class="icon-mobile"></i><input type="text" value="'+resultado[i].telefono+'" name="telefono">'+
                                 +'</div>'
                                 +'<div style="clear:both;"></div>'
                             );
