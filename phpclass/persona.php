@@ -142,6 +142,87 @@ class Persona extends Conectar{
         }
     }
 
+    public function updateTelefono($id,$telefono)
+    {
+        if ($id != '' && $telefono != '' ) {
+            try {
+                $sql = "UPDATE telefono SET `telefono`='" . $telefono ."' WHERE id_telefono = ".$id;
+                return mysqli_query(self::conectar(), $sql);
+            } catch (Exception $e) {
+                echo $e->getMessage();
+                exit;
+            }
+        }
+    }
+
+    public function updateEstudios($id,$descripcion)
+    {
+        if ($id != '' && $descripcion != '' ) {
+            try {
+                $sql = "UPDATE estudios  SET `descripcion`='" . $descripcion ."' WHERE id_estudio = ".$id;
+                return mysqli_query(self::conectar(), $sql);
+            } catch (Exception $e) {
+                echo $e->getMessage();
+                exit;
+            }
+        }
+    }
+
+    public function updateProyecto($id,$descripcion,$nombre,$img)
+    {
+        if ($id != '' && $descripcion != '' && $nombre != '' && $img != '' ) {
+            try {
+                $sql = "UPDATE proyecto SET `descripcion`='" . $descripcion ."',`nombre` ='".$nombre. 
+                "', `img` ='".$img."'WHERE id_proyecto = ".$id;
+                return mysqli_query(self::conectar(), $sql);
+            } catch (Exception $e) {
+                echo $e->getMessage();
+                exit;
+            }
+        }
+    }
+
+    public function updateGaleria($id,$img)
+    {
+        if ($id != '' && $img != '' ) {
+            try {
+                $sql = "UPDATE galeria SET `img`='" . $img ."' WHERE id_galeria = ".$id;
+                return mysqli_query(self::conectar(), $sql);
+            } catch (Exception $e) {
+                echo $e->getMessage();
+                exit;
+            }
+        }
+    }
+
+    public function updatePasatiempo($id,$descripcion)
+    {
+        if ($id != '' && $descripcion != '' ) {
+            try {
+                $sql = "UPDATE pasatiempo SET `descripcion`='" . $descripcion ."', `img`='".$img.
+                "' WHERE id_pasatiempo = ".$id;
+                return mysqli_query(self::conectar(), $sql);
+            } catch (Exception $e) {
+                echo $e->getMessage();
+                exit;
+            }
+        }
+    }
+
+    public function updateUsuario($id,$usuario,$pass)
+    {
+        if ($id != '' && $usuario != '' && $pass != '' ) {
+            try {
+                $sql = "UPDATE usuario SET `usuario`='" . $usuario ."', `clave`='".$pass.
+                "' WHERE id_persona = ".$id;
+                return mysqli_query(self::conectar(), $sql);
+            } catch (Exception $e) {
+                echo $e->getMessage();
+                exit;
+            }
+        }
+    }
+
     // public function deleteProducto($id)
     // {
     //     if ($id != '') {
@@ -155,9 +236,4 @@ class Persona extends Conectar{
     //     }
     // }
 
-    /*SELECT `t`.`telefono`, `tp`.`descripcion`
-FROM `telefono` t
-INNER JOIN `tipoTelefono` tp
-ON t.id_tipoTelefono = tp.id_tipoTelefono
-WHERE t.id_persona = 1*/
 }
