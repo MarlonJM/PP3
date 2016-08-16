@@ -2,13 +2,10 @@ CREATE DATABASE proyecto
   DEFAULT CHARACTER SET utf8
   DEFAULT COLLATE utf8_general_ci;
 USE proyecto;
-CREATE TABLE usuario
-(usuario VARCHAR(30) NOT NULL PRIMARY KEY,
-clave VARCHAR(30) NOT NULL);
 
 CREATE TABLE enfasis
 (id_enfasis INT auto_increment PRIMARY KEY,
-descripcion VARCHAR(20));
+descripcion VARCHAR(50));
 
 CREATE TABLE persona
 (id_persona INT AUTO_INCREMENT PRIMARY KEY,
@@ -17,16 +14,20 @@ apellido1 VARCHAR(20),
 apellido2 VARCHAR(20),
 fechaNacimiento DATE,
 correo VARCHAR(30),
-usuario VARCHAR(30),
 profileImg VARCHAR(100),
 id_enfasis INT,
-reseña NVARCHAR(300),
-FOREIGN KEY (usuario) REFERENCES usuario(usuario),
+acerca NVARCHAR(300),
 FOREIGN KEY (id_enfasis) REFERENCES enfasis(id_enfasis));
+
+CREATE TABLE usuario
+(usuario VARCHAR(30) NOT NULL PRIMARY KEY,
+clave VARCHAR(30) NOT NULL
+id_persona INT,
+FOREIGN KEY (id_persona) REFERENCES persona(id_persona));
 
 CREATE TABLE tipoTelefono
 (id_tipoTelefono INT AUTO_INCREMENT PRIMARY KEY,
-descripcion VARCHAR (20));
+descripcion VARCHAR (50));
 
 CREATE TABLE telefono 
 (telefono INT,
@@ -39,7 +40,7 @@ CREATE TABLE estudios
 (id_estudio INT AUTO_INCREMENT PRIMARY KEY,
 id_persona INT, 
 FOREIGN KEY (id_persona) REFERENCES persona(id_persona),
-descripcion VARCHAR(50)
+descripcion VARCHAR(100)
 );
 
 CREATE TABLE pasatiempo 
@@ -60,5 +61,5 @@ img VARCHAR(500));
 CREATE TABLE galeria
 (id_galeria INT AUTO_INCREMENT PRIMARY KEY,
 id_persona INT,
-img NVARCHAR(100),
+img VARCHAR(100),
 FOREIGN KEY (id_persona) REFERENCES persona(id_persona));
