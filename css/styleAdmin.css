@@ -49,6 +49,19 @@ nav{
 	height: 625px;
 }
 
+#logo{
+
+	width: 500px;
+	height: 300px;
+	margin: 0 auto;
+	padding-top: 70px;
+}
+#logo img{
+	
+	width: 100%;
+	height: 100%;
+}
+
 #videoIntro{
   min-width: 100%;
   min-height: 100%;

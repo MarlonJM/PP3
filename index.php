@@ -25,7 +25,7 @@ include 'gestion_personas.php';
 			
 
 				<div id="logo" style="margin-top:150px;">
-					<h1>PKMS Design</h1>
+					<img src="img/LOGO1.png">
 				</div>
 	
 			</div>
@@ -71,9 +71,9 @@ include 'gestion_personas.php';
 						<form>
 							<label style="margin-top:60px;">Nombre:</label><input type="" name="" class="text">
 							<label>Primer Apellido:</label><input type="" name="" class="text">
-							<label>Segundo Apellido:</label><input type="" name="" class="text">
 							<label>Correo Electrónico:</label><input type="" name="" class="text">
-							<label>Fecha de Nacimiento:</label><input type="" name="" class="text">
+							<label>Usuario:</label><input type="" name="" class="text">
+							<label>Contraseña:</label><input type="" name="" class="text">
 							<input id="boton"  type="button" name="" value="Enviar">
 						</form>
 					</div>
