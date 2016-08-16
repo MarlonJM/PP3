@@ -25,7 +25,6 @@ var app = {
                     +'<textarea rows="4" cols="50">'+resultado['acerca']+'</textarea>'
                     +'<div class="acercaIcon"><i class="icon-markunread"></i><input type="text" value="'+ resultado['correo'] +'" name="correo">'
                     +'</div>'
-                    +'<div style="clear:both;"></div>'
                 );
             }
         });
@@ -45,10 +44,6 @@ var app = {
                             $('#datosPortafolio').append(
                                 '<div class="acercaIcon" style="padding-top:20px;"><i class="icon-phone"></i><input type="text" value="'+resultado[i].telefono+'"name="telefono">'
                                 +'/div>'
-                                +'<div style="clear:both;"></div>'+
-                                '<div class="acercaIcon"><i class="icon-mobile"></i><input type="text" value="'+resultado[i].telefono+'" name="telefono">'+
-                                +'</div>'
-                                +'<div style="clear:both;"></div>'
                             );
                         }  
                     }
@@ -70,7 +65,6 @@ var app = {
                         $('#datosPortafolio').append(
                             '<div class="acercaIcon" style="padding-top:20px;"><i class="icon-graduation-cap"></i><input type="text" value="'+resultado[i].descripcion+'" name="estudio">'
                             +'</div>'
-                            +'<div style="clear:both;"></div>'
                         );  
                     }
                 }
