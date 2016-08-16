@@ -24,7 +24,7 @@ var app = {
                 );
                 $('#descripcion').append(
                     '<h3>Enfasis:'+ resultado['descripcion'] +'</h3>'
-                    +'<p>'+resultado['reseña']+'</p>'
+                    +'<p>'+resultado['acerca']+'</p>'
                 );
 
                 $('#datos').append(
