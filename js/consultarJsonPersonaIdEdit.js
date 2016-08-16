@@ -4,7 +4,7 @@ var app = {
         this.cargarTelefonoEdit();
         this.cargarEstudiosEdit();
         this.cargarProyectosEdit();
-        // this.cargarGaleriaEdit();
+        this.cargarGaleriaEdit();
         this.cargarPasatiemposEdit();
     },
     cargarPersonaIdEdit: function(){
@@ -49,7 +49,7 @@ var app = {
                         if (resultado[i].id_tipoTelefono = 1) {
                             $('#datos').append(
                                 '<div class="acercaIcon" style="padding-top:20px;"><i class="icon-phone"></i><input type="text" value="'+resultado[i].telefono+'"name="telefono">'
-                                +'/div>'
+                                +'</div>'
                                 +'<div style="clear:both;"></div>'
                             );
                         }  
@@ -72,6 +72,7 @@ var app = {
                         $('#formacion').append(
                             '<div class="acercaIcon" style="padding-top:20px;"><i class="icon-graduation-cap"></i><input type="text" value="'+resultado[i].descripcion+'" name="estudio">'
                             +'</div>'
+                            +'<div style="clear:both;"></div>'
                         );  
                     }
                 }
