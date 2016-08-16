@@ -4,7 +4,7 @@ var app = {
         this.cargarTelefonoEdit();
         this.cargarEstudiosEdit();
         this.cargarProyectosEdit();
-        this.cargarGaleriaEdit();
+        // this.cargarGaleriaEdit();
         this.cargarPasatiemposEdit();
     },
     cargarPersonaIdEdit: function(){
