@@ -20,10 +20,11 @@ var app = {
                     '<div id="profileImg" style="background-image: url(img/'+resultado['profileImg']+')">'
                     +'</div>'
                     +'<input type= "text" name= "nombre" value="'+resultado['nombre']+'">'
-                    +'<input type= "text" name= "apellido1" value="'+resultado['apellido1']+'">'
+                    +'<input type= "text" name= "primerapellido" value="'+resultado['apellido1']+'">'
                 );
                 $('#descripcion').append(
                     'Enfasis: <input type="text" value="'+ resultado['descripcion'] +'" name="enfasis">'
+                    +'<input type"hidden" name"id_enfasis" value="'+resultado['id_enfasis']+'">'
                     +'<textarea rows="4" cols="50">'+resultado['acerca']+'</textarea>'
                 );
 
@@ -48,11 +49,19 @@ var app = {
                     for (var i = 0; resultado.length > i; i++) {
                         if (resultado[i].id_tipoTelefono = 1) {
                             $('#datos').append(
-                                '<div class="acercaIcon" style="padding-top:20px;"><i class="icon-phone"></i><input type="text" value="'+resultado[i].telefono+'"name="telefono">'
+                                '<div class="acercaIcon" style="padding-top:20px;"><i class="icon-phone"></i><input type="text" value="'+resultado[i].telefono+'"name="telefono1">'
                                 +'/div>'
+                                +'<input type"hidden" name"id_telefono1" value="'+resultado[i].id_tipoTelefono+'">'
                                 +'<div style="clear:both;"></div>'
                             );
-                        }  
+                        }else if (resultado[i].id_tipoTelefono = 2) {
+                            $('#datos').append(
+                                '<div class="acercaIcon"><i class="icon-mobile"></i><input type="text" value="'+resultado[i].telefono+'"name="telefono2">'
+                                +'</div>'
+                                +'<input type"hidden" name"id_telefono2" value="'+resultado[i].id_tipoTelefono+'">'
+                                +'<div style="clear:both;"></div>'
+                            );
+                        }    
                     }
                 }
             }

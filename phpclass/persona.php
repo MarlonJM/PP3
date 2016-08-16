@@ -116,11 +116,12 @@ class Persona extends Conectar{
         }
     }    
 
-    public function updatePersona($id,$nombre, $apellido1, $apellido2, $fechaNacimiento)
+    public function updatePersona($id,$nombre, $apellido1, $correo,$img,$acerca)
     {
-        if ($id != '' && $nombre != '' && $apellido1 != '' && $apellido2 != '' && $fechaNacimiento != '' ) {
+        if ($id != '' && $nombre != '' && $apellido1 != '' && $correo != '' 
+             && $img != '' && $acerca != '') {
             try {
-                $sql = "UPDATE persona SET `nombre`='" . $nombre ."', `apellido1`='" . $apellido1 ."', `apellido2`='" . $apellido2 ."', `fechaNacimiento` ='".$fechaNacimiento."' WHERE `id`=" . $id ;
+                $sql = "UPDATE persona SET `nombre`='" . $nombre ."', `apellido1`='" . $apellido1 ."', `correo` ='".$correo."', `img` ='".$img."', `acerca` ='".$acerca."' WHERE `id`=" . $id ;
                 return mysqli_query(self::conectar(), $sql);
             } catch (Exception $e) {
                 echo $e->getMessage();
@@ -142,11 +143,12 @@ class Persona extends Conectar{
         }
     }
 
-    public function updateTelefono($id,$telefono)
+    public function updateTelefono($id_tel,$id_persona,$telefono)
     {
         if ($id != '' && $telefono != '' ) {
             try {
-                $sql = "UPDATE telefono SET `telefono`='" . $telefono ."' WHERE id_telefono = ".$id;
+                $sql = "UPDATE telefono SET `telefono`='" . $telefono ."' WHERE id_tipoTelefono = ".$id. "and 
+                id_persona=".$id_persona;
                 return mysqli_query(self::conectar(), $sql);
             } catch (Exception $e) {
                 echo $e->getMessage();

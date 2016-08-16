@@ -1,7 +1,7 @@
 <?php include "authLogin.php"; ?>
 <?php include "phpclass/persona.php"; ?>
 <?php include "headerEdit.php" ?>
-
+<form method="post" action="updateProfile">
 		<div id="intro">
 
 			<video id="videoIntro" autoplay="autoplay" loop>
@@ -64,5 +64,6 @@
 				
 			</div>
 		</div>
-
+		<button>Guardar</button>
+</form>
 <?php include "footer.php" ?>
