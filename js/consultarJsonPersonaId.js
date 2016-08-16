@@ -34,15 +34,14 @@ var app = {
             type: "GET",
             dataType: "json",
             success: function(resultado){
-                if (resultado != " ") {
+                if (resultado != "") {
                     for (var i = 0; resultado.length > i; i++) {
-                        if (resultado[i].descripcion = "casa") {
+                        if (resultado[i].id_tipoTelefono = 1) {
                             $('#datos').append(
                                 '<div class="acercaIcon" style="padding-top:20px;"><i class="icon-phone"></i><h2>'+resultado[i].telefono+'</h2></div>'
                                 +'<div style="clear:both;"></div>'
                             );
-                        } 
-                        if (resultado[i].descripcion = "celular") {
+                        } else if (resultado[i].id_tipoTelefono = 2) {
                             $('#datos').append(
                                 '<div class="acercaIcon"><i class="icon-mobile"></i><h2>'+resultado[i].telefono+'</h2></div>'
                                 +'<div style="clear:both;"></div>'

@@ -28,9 +28,6 @@ class Persona extends Conectar{
 
     public function getPersona($Id) {
         try {
-
-            $sql = 'SELECT p.*, `e`.`descripcion` FROM  `persona` p INNER JOIN `enfasis` e ON `p`.`id_enfasis` = `e`.`id_enfasis` WHERE `p`.`id_persona`='.$Id;
-
             $sql = "SELECT p.*, `e`.`descripcion` FROM  `persona` p INNER JOIN `enfasis` e ON `p`.`id_enfasis` = `e`.`id_enfasis` WHERE id_persona = ".$Id;
             $query = mysqli_query(self::conectar(), $sql);
 
@@ -46,12 +43,11 @@ class Persona extends Conectar{
     
     public function getTelefono($Id) {
         try {
-            $sql = "SELECT t.telefono, tp.descripcion FROM telefono t INNER JOIN tipoTelefono tp
-            ON t.id_tipoTelefono = tp.id_tipoTelefono WHERE id_persona = ".$Id;
+            $sql = "SELECT * FROM telefono t WHERE id_persona = ".$Id;
             $query = mysqli_query(self::conectar(), $sql);
 
             while ($queryData = mysqli_fetch_assoc($query)) {
-                $this->resultado = $queryData;
+                array_push($this->resultado, $queryData);
             }
             return $this->resultado;
         } catch (Exception $e) {
