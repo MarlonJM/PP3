@@ -22,6 +22,11 @@ var app = {
                     +'<h1 style="padding-top:20px;">'+resultado['nombre']+' '+resultado['apellido1']
                     +'</h1>'
                 );
+                $('#descripcion').append(
+                    '<h3>Enfasis:'+ resultado['descripcion'] +'</h3>'
+                    +'<p>'+resultado['reseña']+'</p>'
+                );
+
                 $('#datos').append(
                     '<div class="acercaIcon"><i class="icon-markunread"></i><h2>'+resultado['correo']+'</h2></div>'
                     +'<div style="clear:both;"></div>'
@@ -141,7 +146,6 @@ var app = {
             }
         });
     }
-
 }
 
 $(document).ready(

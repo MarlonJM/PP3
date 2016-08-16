@@ -20,6 +20,7 @@ correo VARCHAR(30),
 usuario VARCHAR(30),
 profileImg VARCHAR(100),
 id_enfasis INT,
+reseña NVARCHAR(300),
 FOREIGN KEY (usuario) REFERENCES usuario(usuario),
 FOREIGN KEY (id_enfasis) REFERENCES enfasis(id_enfasis));
 
