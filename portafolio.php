@@ -48,10 +48,6 @@
 
 				<div id="formacion">
 					<h1>Formación Académica</h1>
-					<div class="acercaIcon" style="padding-top:20px;"><i class="icon-mode_edit"></i><h2>Liceo Mauro Fenández Acuña</h2></div>
-					<div style="clear:both;"></div>
-					<div class="acercaIcon"><i class="icon-graduation-cap"></i><h2>U.I.A</h2></div>
-					<div style="clear:both;"></div>
 				</div>
 				
 			</div>
@@ -61,34 +57,6 @@
 		<div id="proyectos">
 
 			<h1>Proyectos</h1>
-
-			<div class="proyecto">
-				<div class="proyectoImg"></div>
-				<h2>Titulo</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-			</div>
-
-			<div class="proyecto">
-				<div class="proyectoImg"></div>
-				<h2>Titulo</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-			</div>
-
-			<div class="proyecto">
-				<div class="proyectoImg"></div>
-				<h2>Titulo</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-			</div>
-			
 
 		</div>
 

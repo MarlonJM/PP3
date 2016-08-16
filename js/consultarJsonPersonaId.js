@@ -2,6 +2,8 @@ var app = {
     init: function() {
         this.cargarPersonaId();
         this.cargarTelefono();
+        this.cargarEstudios();
+        this.cargarProyectos();
     },
     cargarPersonaId: function(){
         var id = getGET();
@@ -51,7 +53,52 @@ var app = {
                 }
             }
         });
+    },
+    cargarEstudios: function(){
+        var id = getGET();
+        var urlJson = "./json/jsonEstudios.php?id=";
+        var direc = urlJson.concat(id.id);
+        $.ajax({
+            url: direc,
+            type: "GET",
+            dataType: "json",
+            success: function(resultado){
+                if (resultado != "") {
+                    for (var i = 0; resultado.length > i; i++) {
+                        $('#formacion').append(
+                            '<div class="acercaIcon" style="padding-top:20px;"><i class="icon-graduation-cap"></i><h2>'+resultado[i].descripcion+'</h2></div>'
+                            +'<div style="clear:both;"></div>'
+                        );  
+                    }
+                }
+            }
+        });
+    },
+    cargarProyectos: function(){
+        var id = getGET();
+        var urlJson = "./json/jsonProyectos.php?id=";
+        var direc = urlJson.concat(id.id);
+        $.ajax({
+            url: direc,
+            type: "GET",
+            dataType: "json",
+            success: function(resultado){
+                if (resultado != "") {
+                    for (var i = 0; resultado.length > i; i++) {
+                        $('#proyectos').append(
+                            '<div class="proyecto">'
+                            +'<div class="proyectoImg" style=background-image: url("../img/'+resultado[i].img+'")></div>'
+                            +'<h2>'+resultado[i].nombre+'</h2>'
+                            +'<p>'+resultado[i].descripcion
+                            +'</p>'
+                            +'</div>'
+                        );  
+                    }
+                }
+            }
+        });
     }
+
 }
 
 $(document).ready(
