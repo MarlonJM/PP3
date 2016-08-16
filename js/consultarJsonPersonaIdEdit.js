@@ -4,7 +4,7 @@ var app = {
         this.cargarTelefonoEdit();
         this.cargarEstudiosEdit();
         this.cargarProyectosEdit();
-        // this.cargarGaleriaEdit();
+        this.cargarGaleriaEdit();
         this.cargarPasatiemposEdit();
     },
     cargarPersonaIdEdit: function(){
@@ -49,9 +49,14 @@ var app = {
                     for (var i = 0; resultado.length > i; i++) {
                         if (resultado[i].id_tipoTelefono = 1) {
                             $('#datos').append(
+<<<<<<< HEAD
                                 '<div class="acercaIcon" style="padding-top:20px;"><i class="icon-phone"></i><input type="text" value="'+resultado[i].telefono+'"name="telefono1">'
                                 +'/div>'
                                 +'<input type"hidden" name"id_telefono1" value="'+resultado[i].id_tipoTelefono+'">'
+=======
+                                '<div class="acercaIcon" style="padding-top:20px;"><i class="icon-phone"></i><input type="text" value="'+resultado[i].telefono+'"name="telefono">'
+                                +'</div>'
+>>>>>>> origin/master
                                 +'<div style="clear:both;"></div>'
                             );
                         }else if (resultado[i].id_tipoTelefono = 2) {
@@ -81,6 +86,7 @@ var app = {
                         $('#formacion').append(
                             '<div class="acercaIcon" style="padding-top:20px;"><i class="icon-graduation-cap"></i><input type="text" value="'+resultado[i].descripcion+'" name="estudio">'
                             +'</div>'
+                            +'<div style="clear:both;"></div>'
                         );  
                     }
                 }
