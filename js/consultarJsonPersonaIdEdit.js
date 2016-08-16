@@ -16,14 +16,19 @@ var app = {
             type: "GET",
             dataType: "json",
             success: function(resultado){
-                $('#datosPortafolio').append(
+                $('#perfil').append(
                     '<div id="profileImg" style="background-image: url(img/'+resultado['profileImg']+')">'
                     +'</div>'
                     +'<input type= "text" name= "nombre" value="'+resultado['nombre']+'">'
                     +'<input type= "text" name= "apellido1" value="'+resultado['apellido1']+'">'
-                    +'Enfasis: <input type="text" value="'+ resultado['descripcion'] +'" name="enfasis">'
+                );
+                $('#descripcion').append(
+                    'Enfasis: <input type="text" value="'+ resultado['descripcion'] +'" name="enfasis">'
                     +'<textarea rows="4" cols="50">'+resultado['acerca']+'</textarea>'
-                    +'<div class="acercaIcon"><i class="icon-markunread"></i><input type="text" value="'+ resultado['correo'] +'" name="correo">'
+                );
+
+                $('#datos').append(
+                    '<div class="acercaIcon"><i class="icon-markunread"></i><input type="text" value="'+ resultado['correo'] +'" name="correo">'
                     +'</div>'
                 );
             }
@@ -41,7 +46,7 @@ var app = {
                 if (resultado != "") {
                     for (var i = 0; resultado.length > i; i++) {
                         if (resultado[i].id_tipoTelefono = 1) {
-                            $('#datosPortafolio').append(
+                            $('#datos').append(
                                 '<div class="acercaIcon" style="padding-top:20px;"><i class="icon-phone"></i><input type="text" value="'+resultado[i].telefono+'"name="telefono">'
                                 +'/div>'
                             );
@@ -62,7 +67,7 @@ var app = {
             success: function(resultado){
                 if (resultado != "") {
                     for (var i = 0; resultado.length > i; i++) {
-                        $('#datosPortafolio').append(
+                        $('#formacion').append(
                             '<div class="acercaIcon" style="padding-top:20px;"><i class="icon-graduation-cap"></i><input type="text" value="'+resultado[i].descripcion+'" name="estudio">'
                             +'</div>'
                         );  
@@ -82,7 +87,7 @@ var app = {
             success: function(resultado){
                 if (resultado != "") {
                     for (var i = 0; resultado.length > i; i++) {
-                        $('#datosPortafolio').append(
+                        $('#proyectos').append(
                             '<div class="proyecto">'
                             +'<div class="proyectoImg" style="background-image: url(img/'+resultado[i].img+')">'                            
                             +'</div>'
@@ -105,7 +110,7 @@ var app = {
             success: function(resultado){
                 if (resultado != "") {
                     for (var i = 0; resultado.length > i; i++) {
-                        $('#datosPortafolio').append( 
+                        $('#galeria').append( 
                             '<div class="thumb" style="background-image: url(img/'+resultado[i].img+')">'
                         );
 
@@ -125,7 +130,7 @@ var app = {
             success: function(resultado){
                 if (resultado != "") {
                     for (var i = 0; resultado.length > i; i++) {
-                        $('#datosPortafolio').append(
+                        $('#contenedor').append(
                             '<div class="pasatiempo">'
                             +'<div class="pasatiempoImg" style="background-image: url(img/'+resultado[i].img+')">'+'</div>'
                             +'<input type"text" value="'+resultado[i].descripcion+'" name="descripcion">'
