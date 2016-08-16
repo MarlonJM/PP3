@@ -30,6 +30,7 @@ var app = {
                 $('#datos').append(
                     '<div class="acercaIcon"><i class="icon-markunread"></i><input type="text" value="'+ resultado['correo'] +'" name="correo">'
                     +'</div>'
+                    +'<div style="clear:both;"></div>'
                 );
             }
         });
@@ -49,6 +50,7 @@ var app = {
                             $('#datos').append(
                                 '<div class="acercaIcon" style="padding-top:20px;"><i class="icon-phone"></i><input type="text" value="'+resultado[i].telefono+'"name="telefono">'
                                 +'/div>'
+                                +'<div style="clear:both;"></div>'
                             );
                         }  
                     }
