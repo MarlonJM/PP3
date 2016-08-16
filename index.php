@@ -64,17 +64,18 @@ include 'gestion_personas.php';
 				
 			</div>
 
+
 			<div id="formulario">
 				<div id="contenedor">
 					<div id="cuadro">
 						<h1 style="text-align:center;color: #C43B3C; margin-bottom:10px;font-size:70px;">Formulario</h1>
-						<form>
-							<label style="margin-top:60px;">Nombre:</label><input type="" name="" class="text">
-							<label>Primer Apellido:</label><input type="" name="" class="text">
-							<label>Correo Electrónico:</label><input type="" name="" class="text">
-							<label>Usuario:</label><input type="" name="" class="text">
-							<label>Contraseña:</label><input type="" name="" class="text">
-							<input id="boton"  type="button" name="" value="Enviar">
+						<form action="insertarPersona.php" method="post">
+							<label style="margin-top:60px;">Nombre:</label><input type="" name="nombre" class="text">
+							<label>Primer Apellido:</label><input type="" name="primerapellido" class="text">
+							<label>Correo Electrónico:</label><input type="" name="correo" class="text">
+							<label>Usuario:</label><input type="" name="usuario" class="text">
+							<label>Contraseña:</label><input type="" name="clave" class="text">
+							<button id="boton">Enviar</button>
 						</form>
 					</div>
 

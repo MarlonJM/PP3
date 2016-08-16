@@ -223,17 +223,30 @@ class Persona extends Conectar{
         }
     }
 
-    // public function deleteProducto($id)
-    // {
-    //     if ($id != '') {
-    //         try {
-    //             $sql = "DELETE FROM productos WHERE `id`=" . $id ;
-    //             return mysqli_query(self::conectar(), $sql);
-    //         } catch (Exception $e) {
-    //             echo $e->getMessage();
-    //         	exit;
-    //         }
-    //     }
-    // }
+    public function InsertarPersona($nombre, $primerapellido,$correo){
+        if($nombre != ' ' && $primerapellido != ' '&& $correo != ' '){
+            try {
+                $sql= "INSERT INTO persona (nombre, apellido1, correo) VALUES ('".$nombre ."','".$primerapellido."','".$correo ."')";
+                return $query=mysqli_query($this->conectar(),$sql);
+            } catch (Exception $e) {
+                echo $e->getMessage();
+                exit();
+            }
+        }
+    }
+
+    public function InsertarUsuario($usuario, $clave, $id_persona){
+        if($usuario != ' ' && $clave != ' ' && $id_persona != ' '){
+            try {
+                $sql= "INSERT INTO usuario (usuario,clave,id_persona) VALUES ('".$usuario ."','".$clave."','".$id_persona."')";
+                return $query=mysqli_query($this->conectar(),$sql);
+            } catch (Exception $e) {
+                echo $e->getMessage();
+                exit();
+            }
+        }
+    }
+
+
 
 }
