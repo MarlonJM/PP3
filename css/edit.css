@@ -4,17 +4,17 @@
 	position: absolute;
 	height: 100%;
 	width: 100px;
-	background-color: rgba(13,13,13,0.5);
-	z-index: 1;
+	background-color: rgb(13,13,13);
+	top: 0;
 }
 
 #side:hover{
-	width: 100%;
-	-webkit-transition: width 0.4s ease-in-out;
-    -moz-transition: width 0.4s ease-in-out;
-    -o-transition: width 0.4s ease-in-out;
-    -ms-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
+	width: 400px;
+	-webkit-transition: width 0.1s ease-in-out;
+    -moz-transition: width 0.1s ease-in-out;
+    -o-transition: width 0.1s ease-in-out;
+    -ms-transition: width 0.1s ease-in-out;
+    transition: width 0.1s ease-in-out;
 }
 
 #side *{
@@ -27,145 +27,18 @@
 
 #introEdit{
 	height: 700px;
+	position: relative;
 }
 
 #perfilEdit{
-	padding-top: 150px;
-	width: 400px;
-	margin: 0 auto;
-	text-align: center;
 	color: white;
-	font-size: 20px;
-}
-
-#profileImgEdit{
-	width: 300px;
-	height: 300px;
-	border-radius: 200px;
-	background-position: center;
-	background-size: 100%;
-	margin: 0 auto;
-	border-style: solid;
-	border-color: white;
-}
-
-#acercaEdit{
-	height: 700px;
-}
-
-#acercaEdit h1{
-	color:#123A73;
-	/*rgb(71, 95, 119);*/
-	border-style: solid;
-	border-color: transparent;
-	border-bottom-color: #4ECDE7;
 	text-align: center;
-	padding-top: 20px;
-    padding-bottom: 20px;
-
 }
 
-#descripcionEdit{
+#datosPortafolio{
 	width: 550px;
-	height: 640px;
-	float: left;
-	margin: 20px;
-	padding-right: 65px;
-	padding-left: 40px;
-	border-style: solid;
-	border-color: transparent;
-	border-right-color: #4ECDE7;
-}
-
-#descripcionEdit p{
-	padding-top:20px;
-	text-align:center;
-	font-size: 20px;
-}
-
-#contactoEdit{
-	width: 550px;
-	height: 640px;
-	float: right;
-	margin: 20px;
-	padding-right: 30px;
-}
-
-#formacionEdit{
-	padding-top: 30px;
-}
-
-#datosEdit h1{
-	border-style: solid;
-	border-color: transparent;
-	border-bottom-color: #4ECDE7;
-	text-align: center;
-}
-
-.acercaIconEdit{
-	width: 100%;
-}
-.acercaIconEdit *{
-	float: left;
-	padding: 10px;
-	font-size: 30px;
-}
-
-.acercaIconEdit i{
-	padding-top: 18px;
-}
-
-#proyectosEdit{
-	height: 800px;
-	background-color: #0C1829;
-}
-
-#proyectosEdit h1{
-	border-bottom-style: solid;
-	text-align: center;
-	color: #FF8A00;
-	padding-top: 20px;
-    padding-bottom: 20px;
-
-}
-
-.proyectoImgEdit{
-	background-image: url("../img/project.png");
-	background-position: center;
-	background-size: 100%;
-	width: 200px;
-	height: 200px;
+	height: 550px;
+	background-color: red;
 	margin: 0 auto;
-
-	  -webkit-transition: all 0.5s ease;
-     -moz-transition: all 0.5s ease;
-       -o-transition: all 0.5s ease;
-      -ms-transition: all 0.5s ease;
-          transition: all 0.5s ease;
-}
-
-.proyectoImgEdit:hover{
-	width: 300px;
-  	height: 300px;
-}
-
-.proyectoEdit{
-	width: 400px;
-	height: 400px;
-	padding-top: 80px;
-	float: left;
-	text-align: center;
-	padding-left: 20px;
-
-}
-
-.proyectoEdit h2{
 	padding-top: 20px;
-	font-size: 35px;
-	color: #FF8A00;
-}
-
-.proyectoEdit p{
-	color: white;
-	font-size: 20px;
 }

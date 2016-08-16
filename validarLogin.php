@@ -17,7 +17,7 @@ if(!empty($user) && !empty($pass)) {
 
     $con = new Sesion();
     $con->validarLogin($user, $pass);
-
+    
 } else {
 
     header("Location: login.php?error=datos-incorrectos");

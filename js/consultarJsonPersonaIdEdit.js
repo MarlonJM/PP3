@@ -1,13 +1,13 @@
 var app = {
     init: function() {
-        this.cargarPersonaId();
-        this.cargarTelefono();
-        this.cargarEstudios();
-        this.cargarProyectos();
-        this.cargarGaleria();
-        this.cargarPasatiempos();
+        this.cargarPersonaIdEdit();
+        this.cargarTelefonoEdit();
+        this.cargarEstudiosEdit();
+        this.cargarProyectosEdit();
+        this.cargarGaleriaEdit();
+        this.cargarPasatiemposEdit();
     },
-    cargarPersonaId: function(){
+    cargarPersonaIdEdit: function(){
         var id = getGET();
         var urlJson = "./json/jsonPersonaId.php?id=";
         var direc = urlJson.concat(id.id);
@@ -16,7 +16,7 @@ var app = {
             type: "GET",
             dataType: "json",
             success: function(resultado){
-                $('#perfil').append(
+                $('#perfilEdit').append(
                     '<div id="profileImg" style="background-image: url(img/'+resultado['profileImg']+')">'
                     +'</div>'
                     +'<h1 style="padding-top:20px;">'+resultado['nombre']+' '+resultado['apellido1']
@@ -34,7 +34,7 @@ var app = {
             }
         });
     },
-    cargarTelefono: function(){
+    cargarTelefonoEdit: function(){
         var id = getGET();
         var urlJson = "./json/jsonTelefonos.php?id=";
         var direc = urlJson.concat(id.id);
@@ -61,7 +61,7 @@ var app = {
             }
         });
     },
-    cargarEstudios: function(){
+    cargarEstudiosEdit: function(){
         var id = getGET();
         var urlJson = "./json/jsonEstudios.php?id=";
         var direc = urlJson.concat(id.id);
@@ -81,7 +81,7 @@ var app = {
             }
         });
     },
-    cargarProyectos: function(){
+    cargarProyectosEdit: function(){
         var id = getGET();
         var urlJson = "./json/jsonProyectos.php?id=";
         var direc = urlJson.concat(id.id);
@@ -105,7 +105,7 @@ var app = {
             }
         });
     },
-    cargarGaleria: function(){
+    cargarGaleriaEdit: function(){
         var id = getGET();
         var urlJson = "./json/jsonGaleria.php?id=";
         var direc = urlJson.concat(id.id);
@@ -125,7 +125,7 @@ var app = {
             }
         });
     },
-    cargarPasatiempos: function(){
+    cargarPasatiemposEdit: function(){
         var id = getGET();
         var urlJson = "./json/jsonPasatiempos.php?id=";
         var direc = urlJson.concat(id.id);
