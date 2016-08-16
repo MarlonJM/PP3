@@ -16,12 +16,12 @@ fechaNacimiento DATE,
 correo VARCHAR(30),
 profileImg VARCHAR(100),
 id_enfasis INT,
-acerca NVARCHAR(300),
+acerca VARCHAR(300),
 FOREIGN KEY (id_enfasis) REFERENCES enfasis(id_enfasis));
 
 CREATE TABLE usuario
 (usuario VARCHAR(30) NOT NULL PRIMARY KEY,
-clave VARCHAR(30) NOT NULL
+clave VARCHAR(30) NOT NULL,
 id_persona INT,
 FOREIGN KEY (id_persona) REFERENCES persona(id_persona));
 
