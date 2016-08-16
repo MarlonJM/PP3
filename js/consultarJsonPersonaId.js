@@ -94,11 +94,11 @@ var app = {
                     for (var i = 0; resultado.length > i; i++) {
                         $('#proyectos').append(
                             '<div class="proyecto">'
-                            +'<div class="proyectoImg" style=background-image: url("../img/'+resultado[i].img+'")></div>'
-                            +'<h2>'+resultado[i].nombre+'</h2>'
-                            +'<p>'+resultado[i].descripcion
-                            +'</p>'
+                            +'<div class="proyectoImg" style="background-image: url(img/'+resultado[i].img+')">'
+                            
                             +'</div>'
+                            +'<h2>'+resultado[i].nombre+'</h2>'
+                            +'<p>'+resultado[i].descripcion+'</p>'
                         );  
                     }
                 }
@@ -116,9 +116,10 @@ var app = {
             success: function(resultado){
                 if (resultado != "") {
                     for (var i = 0; resultado.length > i; i++) {
-                        $('#galeria').append(
-                            '<div class="thumb" style=background-image: url("../img/'+resultado[i].img+'")></div>'
-                        );  
+                        $('#galeria').append( 
+                            '<div class="thumb" style="background-image: url(img/'+resultado[i].img+')">'
+                        );
+
                     }
                 }
             }
@@ -137,7 +138,7 @@ var app = {
                     for (var i = 0; resultado.length > i; i++) {
                         $('#contenedor').append(
                             '<div class="pasatiempo">'
-                            +'<div class="pasatiempoImg" style=background-image: url("../img/'+resultado[i].img+'")></div>'
+                            +'<div class="pasatiempoImg" style="background-image: url(img/'+resultado[i].img+')">'+'</div>'
                             +'<h2>'+resultado[i].descripcion+'</h2>'
                             +'</div>'
                         );  

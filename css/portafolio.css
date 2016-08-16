@@ -199,7 +199,6 @@
 }
 
 .proyectoImg{
-	background-image: url("../img/project.png");
 	background-position: center;
 	background-size: 100%;
 	width: 200px;
@@ -269,6 +268,9 @@
 }
 
 .pasatiempoImg{
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
 	width: 100px;
 	height: 100px;
 	padding: 10px;
