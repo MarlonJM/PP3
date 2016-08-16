@@ -7,7 +7,7 @@
 
         public function verificarUserPass($user, $pass) {
             try {
-                $sql = "SELECT p.id_persona, u.usuario, u.clave FROM usuario u INNER JOIN persona p on u.usuario = p.usuario WHERE u.usuario = '" . $user . "' AND u.clave = '" . $pass ."'";
+                $sql = "SELECT * FROM usuario WHERE usuario = '" . $user . "' AND clave = '" . $pass ."'";
                 $query = mysqli_query(self::conectar(),$sql);
 
                 while ($queryData = mysqli_fetch_assoc($query)) {
