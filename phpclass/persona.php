@@ -86,6 +86,35 @@ class Persona extends Conectar{
         }
     }
 
+    public function getGaleria($Id) {
+        try {
+            $sql = "SELECT * FROM galeria g WHERE id_persona = ".$Id;
+            $query = mysqli_query(self::conectar(), $sql);
+
+            while ($queryData = mysqli_fetch_assoc($query)) {
+                array_push($this->resultado, $queryData);
+            }
+            return $this->resultado;
+        } catch (Exception $e) {
+            echo $e->getMessage();
+            exit;
+        }
+    }       
+
+    public function getPasatiempos($Id) {
+        try {
+            $sql = "SELECT * FROM pasatiempo p WHERE id_persona = ".$Id;
+            $query = mysqli_query(self::conectar(), $sql);
+
+            while ($queryData = mysqli_fetch_assoc($query)) {
+                array_push($this->resultado, $queryData);
+            }
+            return $this->resultado;
+        } catch (Exception $e) {
+            echo $e->getMessage();
+            exit;
+        }
+    }    
 
     public function updatePersona($id,$nombre, $apellido1, $apellido2, $fechaNacimiento)
     {

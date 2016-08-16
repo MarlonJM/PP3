@@ -245,7 +245,6 @@
 }
 
 .thumb{
-	background-image: url("../img/galery.png");
 	background-position: center;
 	background-size: 100%;
 	background-repeat: no-repeat;
@@ -270,7 +269,6 @@
 }
 
 .pasatiempoImg{
-	background-color: black;
 	width: 100px;
 	height: 100px;
 	padding: 10px;

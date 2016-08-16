@@ -65,45 +65,12 @@
 
 		<div id="galeria">
 			<h1>Galería</h1>
-			<div class="thumb"></div>
-			<div class="thumb"></div>
-			<div class="thumb"></div>
-			<div class="thumb"></div>
-			<div class="thumb"></div>
-			<div class="thumb"></div>
-			<div class="thumb"></div>
-			<div class="thumb"></div>
-			<div class="thumb"></div>
-			<div class="thumb"></div>
-			<div class="thumb"></div>
-			<div class="thumb"></div>
-			<div class="thumb"></div>
-			<div class="thumb"></div>
-			<div class="thumb"></div>
 		</div>
 
 		<div id="pasatiempos">
 			<h1>Pasatiempos</h1>
 			<div id=contenedor>
-				<div class="pasatiempo">
-					<div class="pasatiempoImg"></div>
-					<h2>Titulo</h2>
-				</div>
-
-				<div class="pasatiempo">
-					<div class="pasatiempoImg"></div>
-					<h2>Titulo</h2>
-				</div>
-
-				<div class="pasatiempo">
-					<div class="pasatiempoImg"></div>
-					<h2>Titulo</h2>
-				</div>
-
-				<div class="pasatiempo">
-					<div class="pasatiempoImg"></div>
-					<h2>Titulo</h2>
-				</div>
+				
 			</div>
 		</div>
 

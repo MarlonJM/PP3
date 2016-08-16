@@ -4,6 +4,8 @@ var app = {
         this.cargarTelefono();
         this.cargarEstudios();
         this.cargarProyectos();
+        this.cargarGaleria();
+        this.cargarPasatiempos();
     },
     cargarPersonaId: function(){
         var id = getGET();
@@ -91,6 +93,47 @@ var app = {
                             +'<h2>'+resultado[i].nombre+'</h2>'
                             +'<p>'+resultado[i].descripcion
                             +'</p>'
+                            +'</div>'
+                        );  
+                    }
+                }
+            }
+        });
+    },
+    cargarGaleria: function(){
+        var id = getGET();
+        var urlJson = "./json/jsonGaleria.php?id=";
+        var direc = urlJson.concat(id.id);
+        $.ajax({
+            url: direc,
+            type: "GET",
+            dataType: "json",
+            success: function(resultado){
+                if (resultado != "") {
+                    for (var i = 0; resultado.length > i; i++) {
+                        $('#galeria').append(
+                            '<div class="thumb" style=background-image: url("../img/'+resultado[i].img+'")></div>'
+                        );  
+                    }
+                }
+            }
+        });
+    },
+    cargarPasatiempos: function(){
+        var id = getGET();
+        var urlJson = "./json/jsonPasatiempos.php?id=";
+        var direc = urlJson.concat(id.id);
+        $.ajax({
+            url: direc,
+            type: "GET",
+            dataType: "json",
+            success: function(resultado){
+                if (resultado != "") {
+                    for (var i = 0; resultado.length > i; i++) {
+                        $('#contenedor').append(
+                            '<div class="pasatiempo">'
+                            +'<div class="pasatiempoImg" style=background-image: url("../img/'+resultado[i].img+'")></div>'
+                            +'<h2>'+resultado[i].descripcion+'</h2>'
                             +'</div>'
                         );  
                     }
