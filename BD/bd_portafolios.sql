@@ -54,7 +54,7 @@ CREATE TABLE proyecto
 (id_proyecto INT AUTO_INCREMENT PRIMARY KEY,
 id_persona INT,
 FOREIGN KEY (id_persona) REFERENCES persona(id_persona),
-nombre VARCHAR(20),
+nombre VARCHAR(25),
 descripcion VARCHAR(100),
 img VARCHAR(500));
 
